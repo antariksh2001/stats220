@@ -4,6 +4,8 @@
 
 ![meme](https://github.com/antariksh2001/stats220/blob/main/my_meme.png?raw=true)
 
+The R code used to create this meme follows:
+
 ```r
 library(magick)
 confused_cat_url <- "https://yt3.ggpht.com/ytc/AKedOLRj_FI_gQkJiXJ88JuPj2f30i77BQYX9l-KkkV1=s900-c-k-c0x00ffffff-no-rj"
