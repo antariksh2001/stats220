@@ -42,3 +42,7 @@ meme <- c(top_row, bottom_row)%>%
 
 image_write(meme, "my_meme.png")
 ```
+
+## Inspiration for the meme: 
+
+This meme was inspired from the **Drake Hotline Bling** meme and has been adapted so that it uses a couple of ✨*fabulous felines*✨ and is topical to the University of Auckland. 
