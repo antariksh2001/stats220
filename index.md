@@ -43,6 +43,24 @@ meme <- c(top_row, bottom_row)%>%
 image_write(meme, "my_meme.png")
 ```
 
-## Inspiration for the meme: 
+## Inspiration: 
 
-This meme was inspired from the **Drake Hotline Bling** meme and has been adapted so that it uses a couple of ✨*fabulous felines*✨ and is topical to the University of Auckland. 
+This meme was inspired from the **Drake Hotline Bling** meme and has been adapted so that it:
+* Uses a couple of ✨*fabulous felines*✨ 
+* Is topical to the [University of Auckland](https://www.auckland.ac.nz/en.html). 
+
+### An Example of the Original:
+![Hotline Bling meme](https://images.ctfassets.net/pwv49hug9jad/5K39I2JrCfevWx2vrXJwkr/def7943e979c90cb421121d2fa6665d4/atl-blog-memes-10a.jpg?fm=webp)
+
+## Process: 
+
+I followed the following process when creating this meme in R: 
+
+1. Found images of the aforementioned ✨*fabulous felines*✨ using the `image_read` function before scaling them to 300 pixels 
+2. Generated backgrounds using the `image_blank` function 
+3. Generated the two sets of text using the `image_annotate` function 
+4. Created vectors for each row using `c`
+5. Generated the final result by combining the two vectors using the `image_append` function 
+
+
+
