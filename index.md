@@ -4,9 +4,10 @@
 
 ![meme](https://github.com/antariksh2001/stats220/blob/main/my_meme.png?raw=true)
 
-The R code used to create this meme follows:
+The R code used to create this meme is as follows:
 
 ```r
+
 library(magick)
 confused_cat_url <- "https://yt3.ggpht.com/ytc/AKedOLRj_FI_gQkJiXJ88JuPj2f30i77BQYX9l-KkkV1=s900-c-k-c0x00ffffff-no-rj"
 excited_cat_url <- "https://static.boredpanda.com/blog/wp-content/uploads/2015/07/smiling-cat-2__605.jpg"
@@ -41,6 +42,7 @@ meme <- c(top_row, bottom_row)%>%
   image_append(stack = TRUE)
 
 image_write(meme, "my_meme.png")
+
 ```
 
 ## Inspiration: 
