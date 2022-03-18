@@ -9,39 +9,66 @@ The R code used to create this meme is as follows:
 ```r
 
 library(magick)
-confused_cat_url <- "https://yt3.ggpht.com/ytc/AKedOLRj_FI_gQkJiXJ88JuPj2f30i77BQYX9l-KkkV1=s900-c-k-c0x00ffffff-no-rj"
-excited_cat_url <- "https://static.boredpanda.com/blog/wp-content/uploads/2015/07/smiling-cat-2__605.jpg"
 
-# confused cat img
-confused_cat <- image_read(confused_cat_url)%>%
-  image_scale(300)
+old_homer <- image_read("https://static.wikia.nocookie.net/clarence/images/b/b8/Screenshot_%285360%29.png/revision/latest/scale-to-width-down/1920?cb=20161117010123")%>%
+  image_scale(500)
 
-# excited_cat_img 
-excited_cat <- image_read(excited_cat_url)%>%
-  image_scale(300)
+mid_homer <- image_read("https://media.wired.com/photos/593252a226780e6c04d2af1a/master/pass/the-homer-ft.jpg")%>%
+  image_scale(500)
 
-# other courses text
-other_courses <- image_blank(height = 300, width = 300, color = "#000000")%>%
-  image_annotate(text = "Me in other courses", color = "#FFFFFF", size = "30", font = "Comic Sans", 
-                 gravity = "center")
+mid_homer_cropped <- image_crop(mid_homer, "250x0") %>%
+  image_scale("x400")
 
-# Stats 220 text
-stats_220 <- image_blank(height = 300, width = 300, color = "#000000")%>%
-  image_annotate(text = "Me in Stats 220", color = "#FFFFFF", size = "30", font = "Comic Sans", 
-                 gravity = "center")
 
-# top row
-top_row <- c(confused_cat, other_courses)%>%
-  image_append()
+chad_homer <- image_read("https://ih1.redbubble.net/image.2154415465.9777/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.jpg")%>%
+  image_scale(500)%>%
+  image_charcoal()
 
-# bottom row
-bottom_row <- c(excited_cat, stats_220)%>%
-  image_append()
 
-meme <- c(top_row, bottom_row)%>%
-  image_append(stack = TRUE)
+background1 <- image_blank(width = 600, 
+                           height = 300, 
+                           color = "#000000")%>%
+  image_annotate(text = "People who edit memes in MS Paint", 
+                 color = "#FFFFFF", 
+                 font = "Comic Sans",
+                 gravity = "center",
+                 size = 30)
 
-image_write(meme, "my_meme.png")
+background2 <- image_blank(width = 600, 
+                           height = 300, 
+                           color = "#000000")%>%
+  image_annotate(text = "People who make original memes\n in Photoshop/GIMP", 
+                 color = "#FFFFFF", 
+                 font = "Comic Sans",
+                 gravity = "center",
+                 size = 30)
+
+background3 <- image_blank(width = 600, 
+                           height = 500, 
+                           color = "#000000")%>%
+  image_annotate(text = "People who write 50 lines of code\n to make *aesthetic* memes in R", 
+                 color = "#FFFFFF", 
+                 font = "Comic Sans",
+                 gravity = "center",
+                 size = 30)
+
+top_vector <- c(old_homer, background1)
+top_row <- image_append(top_vector)
+
+mid_row_vector <- c(mid_homer, background2)
+mid_row <- image_append(mid_row_vector)
+
+bottom_row_vector <- c(chad_homer, background3)
+bottom_row <- image_append(bottom_row_vector)
+
+meme <- c(top_row, mid_row, bottom_row)%>%
+  image_append(stack = TRUE) %>%
+  image_scale(800)
+
+image_border(meme, "hotpink")
+
+image_write(meme, "my_meme1.png")
+
 
 ```
 
