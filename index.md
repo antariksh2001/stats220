@@ -74,22 +74,23 @@ image_write(meme, "my_meme1.png")
 
 ## Inspiration: 
 
-This meme was inspired from the **Drake Hotline Bling** meme and has been adapted so that it:
-* Uses a couple of ✨*fabulous felines*✨ 
-* Is topical to the [University of Auckland](https://www.auckland.ac.nz/en.html). 
+This meme was inspired from the **'Big Brain'** meme and has been adapted so that it:
+* References [The Simpsons](https://www.imdb.com/title/tt0096697/) 
+* Is topical to STATS 220 
 
 ### An Example of the Original:
-![Hotline Bling meme](https://images.ctfassets.net/pwv49hug9jad/5K39I2JrCfevWx2vrXJwkr/def7943e979c90cb421121d2fa6665d4/atl-blog-memes-10a.jpg?fm=webp)
+![Expanding Brain meme](https://i.imgflip.com/2t80lj.jpg) 
 
 ## Process: 
 
 I followed the following process when creating this meme in R: 
 
-1. Found images of the aforementioned ✨*fabulous felines*✨ using the `image_read` function before scaling them to 300 pixels 
+1. Found images of the various versions of Homer using the `image_read` function before scaling them to 300 pixels 
 2. Generated backgrounds using the `image_blank` function 
-3. Generated the two sets of text using the `image_annotate` function 
-4. Created vectors for each row using `c`
-5. Generated the final result by combining the two vectors using the `image_append` function 
+3. Generated the two sets of text using the `image_annotate` function
+4. Had some ✨fun✨ with the various magick functions such as `image_charcoal` (used for the last image) 
+5. Created vectors for each row using `c`
+6. Generated the final result by combining the two vectors using the `image_append` function 
 
 
 
