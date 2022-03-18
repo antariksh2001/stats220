@@ -2,7 +2,7 @@
 
 ## Part A Meme:
 
-![part A meme](https://github.com/antariksh2001/stats220/blob/8aa149ce29625ae5a0685d14aecc59afcab64bec/my_meme1.png)
+![part A meme](https://raw.githubusercontent.com/antariksh2001/stats220/main/my_meme1.png)
 
 The R code used to create this meme is as follows:
 
