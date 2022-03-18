@@ -90,7 +90,7 @@ I followed the following process when creating this meme in R:
 3. Generated the two sets of text using the `image_annotate` function
 4. Had some ✨fun✨ with the various magick functions such as `image_charcoal` (used for the last image) 
 5. Created vectors for each row using `c`
-6. Generated the final result by combining the two vectors using the `image_append` function 
+6. Generated the final result by combining the three vectors using the `image_append` function 
 
 
 
