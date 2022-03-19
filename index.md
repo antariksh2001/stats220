@@ -1,4 +1,10 @@
-# Assignment 1:
+# Assignment 1 Part A:
+
+```css
+body {background-color: #FFEBBA;}
+
+```
+
 
 [View this repo in GitHub pages](https://antariksh2001.github.io/stats220/)
 
