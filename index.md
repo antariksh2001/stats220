@@ -1,5 +1,7 @@
 # Assignment 1:
 
+[View this repo in GitHub pages](https://antariksh2001.github.io/stats220/)
+
 ## Part A Meme:
 
 ![part A meme](https://raw.githubusercontent.com/antariksh2001/stats220/main/my_meme1.png)
