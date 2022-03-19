@@ -76,7 +76,7 @@ image_write(meme, "my_meme1.png")
 
 ## Inspiration: 
 
-This meme was inspired from the **'Big Brain'** meme and has been adapted so that it:
+This meme was inspired from the ***'Big Brain'*** meme and has been adapted so that it:
 * References [The Simpsons](https://www.imdb.com/title/tt0096697/) 
 * Is topical to STATS 220 
 
