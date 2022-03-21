@@ -1,4 +1,5 @@
 # Assignment 1 Part A:
+### Antariksh Nag (anag535)
 
 
 [View this repo in GitHub pages](https://antariksh2001.github.io/stats220/)
